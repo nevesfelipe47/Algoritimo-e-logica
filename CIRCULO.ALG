@@ -1,4 +1,4 @@
-Algoritmo "troco"
+Algoritmo "circulo"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi 
 // Descrição   : Aqui você descreve o que o programa faz! (função)
@@ -6,22 +6,16 @@ Algoritmo "troco"
 // Data atual  : 18/11/2021
 Var
 // Seção de Declarações das variáveis 
-          qtdP:inteiro
-          valorT,troco,dinheiro,precoP:real
-          
+   //a = pi *r²
+   area,R : real
+
+   
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-   escreva("Preço unitario do produto: ")
-   leia(precoP)
-   escreva("Quantidade comprada: ")
-   leia(qtdP)
-   escreva("Dinheiro recebido: ")
-   leia(dinheiro)
-
-   valorT <-precoP * qtdP
-   troco <-  dinheiro - valorT
-   escreva("Troco = ",troco:8:2)
-   
+   escreva("Digite o valor do raio do circulo: ")
+   leia(R)
+   area <- pi*exp(R,2)
+   escreva("Area = ",area:8:3)
 
 Fimalgoritmo
