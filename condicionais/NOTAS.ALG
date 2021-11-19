@@ -20,7 +20,7 @@ Inicio
          notafim <- nota1 + nota2
                  escreval("Nota final: ",notafim:5:1)
                                se notafim >=60.00 entao
-                                  escreva("APROVADO")
+                                  escreva("PARABENS VOCÊ FOI APROVADO")
                                senao
                                     se notafim <60.00 entao
                                     escreva("REPROVADO")
