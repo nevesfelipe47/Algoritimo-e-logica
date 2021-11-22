@@ -16,10 +16,6 @@ Inicio
    leia(y)
 
    enquanto (x<>0) e (y<>0) faca
-   escreva("Digite os valores das coordenadas X e Y: ")
-   leia(x)
-   leia(y)
-      fimenquanto
           se (x>0) e (y>0) entao
              escreval("QUADRANTE Q1")
              senao
@@ -29,9 +25,17 @@ Inicio
                           se (x<0) e (y<0) entao
                              escreval("QUADRANTE Q3")
                              senao
-                             escreval("QUADRANTE Q4")
+                                  se (x>0) e (y<0) entao
+                                     escreval("QUADRANTE Q4")
+                                     senao
+                                     escreva
+                                  fimse
                              fimse
                         fimse
                   fimse
+          escreva("Digite os valores das coordenadas X e Y: ")
+          leia(x)
+          leia(y)
+          fimenquanto
 
 Fimalgoritmo
