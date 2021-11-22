@@ -11,13 +11,11 @@ Var
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
 
-
-
    escreval("Digite os valores das coordenadas X e Y: ")
    leia(x)
    leia(y)
 
-   enquanto (x<>0)ou (y<>0) faca
+   enquanto (x<>0) e (y<>0) faca
    escreva("Digite os valores das coordenadas X e Y: ")
    leia(x)
    leia(y)
