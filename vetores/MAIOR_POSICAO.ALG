@@ -7,7 +7,8 @@ Algoritmo "maior_posicao"
 Var
 // Seção de Declarações das variáveis 
    vetNumero: vetor [0..99] de real
-   N,i:inteiro
+   N,i,posiMaior:inteiro
+   maior:real
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
@@ -19,7 +20,20 @@ Inicio
         leia(vetNumero[i])
    fimpara
 
-        
+   maior<- vetNumero[0]
+   posiMaior<-0
+   para i de 0 ate N-1 faca
+        se vetNumero[i] > maior entao
+           maior <- vetNumero[i]
+           posiMaior<-i
+        fimse
+   fimpara
+   escreval
+   escreval("Maior valor= ",maior:4:2)
+   escreval("Posição do Maior = ",posiMaior)
+   
+   
+   
 
 
            
