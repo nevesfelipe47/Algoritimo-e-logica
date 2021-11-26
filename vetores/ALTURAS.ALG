@@ -9,8 +9,9 @@ Var
    vetNome: vetor [0..9] de caractere
    vetIdade: vetor [0..9] de inteiro
    vetAltura: vetor [0..9] de real
-   N,i,count:inteiro
-   mediaAltura,soma,porcIdade:real
+   N,i:inteiro
+   alturaMedia,porcentagem,soma:real
+
    
 
 Inicio
@@ -28,33 +29,7 @@ Inicio
         leia(vetAltura[i])
    fimpara
    
-   soma<-0
-   //comeca aqui a altura media
-   para i de 0 ate N-1 faca
-        soma<-soma + vetAltura[i]
-        mediaAltura<-soma /N
-   fimpara
-   escreval("Altura Media= ",mediaAltura:4:2)
-   //fim altura media
-   //----------------------------------------//
-   //comeco menor que 16 idade
-   count<-0
-   para i de 0 ate N-1 faca
-           se vetIdade[i] < 16 entao
-           count<-count + 1
-        fimse
-   fimpara
-
-   porcIdade<-count*100/N
-   escreval("Porcentagem de pessoas com menos 16: ",porcIdade)
    
-   para i de 0 ate N-1 faca
-    se vetIdade[i] <16 entao
-       escreval(vetNome[i])
-    fimse
-   fimpara
-   //fim menor de 16
-        
 
 
            
